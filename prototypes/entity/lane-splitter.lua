@@ -13,7 +13,7 @@ data.raw["item"]["lane-splitter"].next_upgrade = "fast-lane-splitter"
 -- Override the vanilla icons
 data.raw["lane-splitter"]["lane-splitter"].icons = {
   {
-    icon = "__lane-splitters__/graphics/icons/lane-splitter.png",
+    icon = "__lane-splitters-updated__/graphics/icons/lane-splitter.png",
     icon_size = 64,
     icon_mipmaps = 4,
     tint = { r = 1.0, g = 1.0, b = 1.0 }
@@ -22,7 +22,7 @@ data.raw["lane-splitter"]["lane-splitter"].icons = {
 
 data.raw["item"]["lane-splitter"].icons = {
   {
-    icon = "__lane-splitters__/graphics/icons/lane-splitter.png",
+    icon = "__lane-splitters-updated__/graphics/icons/lane-splitter.png",
     icon_size = 64,
     icon_mipmaps = 4,
     tint = { r = 1.0, g = 1.0, b = 1.0 }

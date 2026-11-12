@@ -165,7 +165,7 @@ function make_tier(config)
   local prototype = {
     name = config.name,
     type = "lane-splitter",
-    icon = "__lane-splitters__/graphics/icons/"..config.name..".png",
+    icon = "__lane-splitters-updated__/graphics/icons/"..config.name..".png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = config.name},
     max_health = config.health or 170,
@@ -205,7 +205,7 @@ function make_tier(config)
   local item = {
     type = "item",
     name = config.name,
-    icon = "__lane-splitters__/graphics/icons/"..config.name..".png",
+    icon = "__lane-splitters-updated__/graphics/icons/"..config.name..".png",
     hidden = false,
     subgroup = "belt",
     order = "d[lane-splitter]-"..order_sub.."["..config.name.."]",
@@ -222,7 +222,7 @@ function make_tier(config)
     name = config.name,
     enabled = false,
     energy_required = 1,
-    category = data.raw["recipe"][config.base_splitter].category,
+    categories = table.deepcopy(data.raw["recipe"][config.base_splitter].categories or {data.raw["recipe"][config.base_splitter].category or "crafting"}),
     ingredients = data.raw["recipe"][config.base_splitter].ingredients,
     results = {{type="item", name=config.name, amount=1}}
   }
@@ -240,3 +240,4 @@ require("express-lane-splitter")
 if mods["space-age"] then
   require("turbo-lane-splitter")
 end
+

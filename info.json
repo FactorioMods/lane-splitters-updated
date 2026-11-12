@@ -1,11 +1,18 @@
 {
-  "name": "lane-splitters",
-  "author": "Nimphious",
-  "version": "0.1.2",
-  "factorio_version": "2.0",
-  "title": "Lane Splitters",
+  "name": "lane-splitters-updated",
+  "author": "Nimphious; FactorioMods (Factorio 2.1 port)",
+  "version": "1.0.0",
+  "factorio_version": "2.1",
+  "title": "Lane Splitters: Updated",
   "contact": "Nimphious@gmail.com",
   "homepage": "https://nimphio.us/factorio/lane-splitters",
-  "description": "Exposes the lane splitter entity that was added in 2.0, and adds the higher tier variants.",
-  "dependencies": ["base >= 2.0", "?space-age >= 2.0"]
+  "description": "Factorio 2.1 compatibility fork of lane-splitters. Exposes the lane splitter entity that was added in 2.0, and adds the higher tier variants.",
+  "dependencies": [
+    "base >= 2.1.24",
+    "?space-age >= 2.0",
+    "! lane-splitters"
+  ],
+  "migrates_from": [
+    "lane-splitters"
+  ]
 }
