@@ -1,0 +1,11 @@
+{
+  "name": "lane-splitters",
+  "author": "Nimphious",
+  "version": "0.1.2",
+  "factorio_version": "2.0",
+  "title": "Lane Splitters",
+  "contact": "Nimphious@gmail.com",
+  "homepage": "https://nimphio.us/factorio/lane-splitters",
+  "description": "Exposes the lane splitter entity that was added in 2.0, and adds the higher tier variants.",
+  "dependencies": ["base >= 2.0", "?space-age >= 2.0"]
+}
